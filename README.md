@@ -1,25 +1,5 @@
-# Liberu Music: Media Library and Content — Core
+# Music Media Library
 
-> Documentation-only placeholder for the Liberu Music core module.
+Audio asset verification for Laravel 13 and PHP 8.5. Under development; implementation and remaining scope are tracked in [issue #62](https://github.com/liberusoftware/music-daw-laravel/issues/62).
 
-## Status
-
-Repository reserved for `module-music-media-library`. No module implementation, Composer package, endpoints or UI components are provided yet.
-
-## Planned scope
-
-See the [module plan](https://github.com/liberusoftware/documentation/blob/main/projects/music/core/media-library.md) and [domain specification](https://github.com/liberusoftware/documentation/blob/main/projects/music/features/media-library.md) for requirements and acceptance criteria.
-
-## Architecture
-
-Laravel coordinates persisted metadata, policy and asynchronous work. Real-time audio, device access and DSP belong to a separately specified local runtime; PHP and network requests must never run in the audio callback. Shared identity, authorization and storage follow the [foundation adoption plan](https://github.com/liberusoftware/documentation/blob/main/projects/music/FOUNDATION.md).
-
-## Related repositories
-
-- [Music application](https://github.com/liberusoftware/music-daw-laravel)
-- [Product documentation](https://github.com/liberusoftware/documentation/blob/main/projects/music/README.md)
-- [Delivery plan](https://github.com/liberusoftware/documentation/blob/main/projects/music/DEVELOPMENT.md)
-
-## Contributing
-
-Implementation will follow the documented contracts and delivery gates. This initial repository contains documentation only.
+Run `composer install`, then `composer test` or `composer test:coverage` in this directory. Tests use the shared Liberu package testbench.
